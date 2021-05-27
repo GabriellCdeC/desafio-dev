@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+div .dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+    .buscador{
+        height: 30vh;
+        
+        h1{
+            font-size: 60px;
+            color: #3a8970;
+            margin-top: 3vh;
+            font-weight: normal;
+            
+        }
+
+        form {            
+            text-align: center;
+            margin-top: 5vh;
+
+            input{
+                padding: 15px;
+                border: solid 2px #3a8970;
+                width: 50%;
+                font-size:20px;               
+            }
+
+
+            button {
+                margin-left: 30px;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 30px;
+                background-color:#3a8970;
+                color: #fff;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.9s;
+                cursor: pointer;
+                
+            }
+            button:hover{
+                transform: scale(0.9);
+            }
+            
+        }
+    }
+
+    .empresasConsultadas{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height:70vh;
+        width: 100%;
+        background: linear-gradient(to right, #388669, #459A9E);
+
+        .card {
+            font-size: 16px;
+            color: #3a8970;
+            font-weight: bold;
+            background-color: #fff;
+            border-radius: 15px; /* 5px rounded corners */
+            min-height: 300px;
+            max-height: auto;
+            max-width: 360px;
+            margin-left: 30px;
+            transition: 0.7s;
+            cursor: pointer;
+           
+            
+            h5{
+                font-size: 16px;
+            }
+
+            h6{
+                font-size: 16px;
+                font-weight: normal;
+                margin-top: 5px;
+            }
+
+            p{
+                margin-top: 20px;
+            }
+            
+          }  
+
+          .card:hover{
+              transform: scale(0.99)
+          }
+
+          .container {
+            padding: 30px;
+          }
+
+        
+    }
+}
