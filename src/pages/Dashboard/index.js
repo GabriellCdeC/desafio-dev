@@ -3,6 +3,7 @@ import api from '../../services/api'
 import MaskedInput from '../../services/MaskedInput'
 import validarCNPJ from '../../services/validaCNPJ'
 import './style.scss'
+import searchImg from '../../assets/search.png'
 
 
 const Dashboard = () => {
@@ -36,8 +37,12 @@ const Dashboard = () => {
     
     function cheacaEmpresasConsultadas(){
         if(empresas.length == 0){
-            return (
-                <h1>Vazio</h1>
+            return (          
+                <div className="search">
+                    <img src={searchImg} placeholder="Search Image" />
+                    <h1>Localize acima a primeira empresa</h1>
+                </div>
+         
             )
         }else {
            return (
